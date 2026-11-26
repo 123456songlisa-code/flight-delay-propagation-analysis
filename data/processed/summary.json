@@ -1,0 +1,28 @@
+{
+  "scope": {
+    "sources": [
+      "bts_2024_01.zip"
+    ],
+    "date_start": "2024-01-01",
+    "date_end": "2024-01-31",
+    "is_full_year": false
+  },
+  "kpis": {
+    "scheduled_flights": 547271,
+    "operated_flights": 525370,
+    "completion_rate": 0.9599814351573535,
+    "arrival_otp15": 0.7593886213525706,
+    "cancellation_rate": 0.03725576542517327,
+    "severe_delay_rate": 0.08781049546034224,
+    "p90_arrival_delay_minutes": 52.0,
+    "valid_rotation_pairs": 461224,
+    "inbound_delayed_pairs": 105823,
+    "propagation_rate": 0.5882842104268449,
+    "absorption_rate": 0.4117157895731552,
+    "median_recovered_minutes": 0.0
+  },
+  "quality": {
+    "rotation_sample_sufficient": true,
+    "rotation_warning": null
+  }
+}

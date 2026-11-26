@@ -1,0 +1,27 @@
+Scheduled Flights = SUM('Carrier KPI'[scheduled_flights])
+
+Weighted Completion Rate =
+DIVIDE(
+    SUMX('Carrier KPI', 'Carrier KPI'[scheduled_flights] * 'Carrier KPI'[completion_rate]),
+    [Scheduled Flights]
+)
+
+Weighted OTP15 =
+DIVIDE(
+    SUMX('Carrier KPI', 'Carrier KPI'[scheduled_flights] * 'Carrier KPI'[arrival_otp15]),
+    [Scheduled Flights]
+)
+
+Weighted Cancellation Rate =
+DIVIDE(
+    SUMX('Carrier KPI', 'Carrier KPI'[scheduled_flights] * 'Carrier KPI'[cancellation_rate]),
+    [Scheduled Flights]
+)
+
+Selected Buffer Minutes = SELECTEDVALUE('Buffer Scenario'[buffer_minutes], 0)
+
+Potentially Covered Departures =
+MAX('Buffer Scenario'[potentially_covered_departures])
+
+Relative Reduction = MAX('Buffer Scenario'[relative_reduction])
+

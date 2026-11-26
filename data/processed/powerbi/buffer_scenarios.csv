@@ -1,0 +1,5 @@
+﻿buffer_minutes,baseline_delayed_departures,simulated_delayed_departures,potentially_covered_departures,relative_reduction,additional_schedule_minutes,covered_per_1000_added_minutes,sample_sufficient
+0,99974,99974,0,0.0,0,,True
+5,99974,85292,14682,0.14685818312761317,2306120,6.366537734376355,True
+10,99974,73591,26383,0.2638986136395463,4612240,5.720214039165351,True
+15,99974,64172,35802,0.3581131094084462,6918360,5.174925849478778,True
